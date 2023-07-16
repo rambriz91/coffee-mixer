@@ -26,7 +26,7 @@ function selChar() {
 
   if (confirm('Would you like to include special characters?')) {
     charList = charList.concat(special)
-  }
+  } 
 };
 
 //Randomizes password from charList
