@@ -27,7 +27,17 @@ function selChar() {
   if (confirm('Would you like to include special characters?')) {
     charList = charList.concat(special)
   }
-}
+};
+
+//Randomizes password from charList
+function randomizer(passLength) {
+  retVal = '';
+  for (var i = 0; i < passLength; i++) {
+    retVal += charList[Math.floor(Math.random() * charList.length)]
+  }
+
+  return retVal;
+};
 
 //prompts the user to select password length.
 function generatePassword() {
@@ -35,7 +45,7 @@ function generatePassword() {
     if (passLength >= 8 && passLength <= 128) {
       selChar();
       randomizer(passLength);
-      alert('Password Generated')
+      alert('Password Generated!')
     }
 
     else {
@@ -43,6 +53,7 @@ function generatePassword() {
     }
     
     return retVal;
+  };
 
 // Write password to the #password input
 function writePassword() {
@@ -50,8 +61,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
-}
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
