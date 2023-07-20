@@ -17,9 +17,8 @@ I was provided with starter code to create an app that creates a random password
 
 ## Links
 
-- Github Repository: https://github.com/rambriz91/devfolio-deux
-- Deployed Webpage: https://rambriz91.github.io/devfolio-deux/
-
+- Github Repository: https://github.com/rambriz91/coffee-mixer
+- Deployed Webpage: https://rambriz91.github.io/coffee-mixer/
 ## Credits
 
 - https://stackoverflow.com/questions/29719329/convert-array-into-upper-case
