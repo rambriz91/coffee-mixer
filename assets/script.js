@@ -27,8 +27,8 @@ function selChar() {
   if (confirm('Would you like to include special characters?')) {
     charList = charList.concat(special)
   } else {
-    alert("Please select at least one character set!")
-  }
+    alert('Please select at least one character set!')
+  } 
 };
 
 //Randomizes password from charList
@@ -61,8 +61,11 @@ function generatePassword() {
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+if (password.includes(undefined)) {
+  passwordText.value = 'Start Over, you mutt!'
+} else {
   passwordText.value = password;
+}
 };
 
 // Add event listener to generate button
